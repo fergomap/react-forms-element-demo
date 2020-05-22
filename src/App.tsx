@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FunctionComponent, ReactElement } from 'react';
+import './App.scss';
+import { FormComponent, Field } from 'react-forms-element';
+import HeaderComponent from './components/header/header.component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const validatePassword = (password: string): string => {
+  return password.length < 6 ? 'short_pwd' : '';
 }
+
+const App: FunctionComponent = (): ReactElement => {
+  const fields: Field[] = [
+    { content: <div><h1>FORM EXAMPLE</h1></div>, type: 'custom' },
+    { value: '', label: 'Name', name: 'name', type: 'string', required: true },
+    { value: '', label: 'Password', name: 'pwd', type: 'password', required: true, customValidator: validatePassword, inputType: 'password' },
+    { value: '', label: 'Business', name: 'business', type: 'checkbox', required: true }
+  ];
+  const errors = {
+    short_pwd: 'Password too short'
+  };
+
+  const onSubmit = (form: any): any => console.log(form);
+
+  return <div className="App">
+      <HeaderComponent/>
+      <FormComponent fields={fields} onSubmit={onSubmit} errors={errors} />
+  </div>;
+};
 
 export default App;
