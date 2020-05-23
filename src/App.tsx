@@ -1,28 +1,17 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 import './App.scss';
-import { FormComponent, Field } from 'react-forms-element';
 import HeaderComponent from './components/header/header.component';
-
-const validatePassword = (password: string): string => {
-  return password.length < 6 ? 'short_pwd' : '';
-}
+import ExampleComponent, { ExampleComponentProps } from './components/example/example.component';
+import { APP_CONSTANTS } from './config/app.config';
 
 const App: FunctionComponent = (): ReactElement => {
-  const fields: Field[] = [
-    { content: <div><h1>FORM EXAMPLE</h1></div>, type: 'custom' },
-    { value: '', label: 'Name', name: 'name', type: 'string', required: true },
-    { value: '', label: 'Password', name: 'pwd', type: 'password', required: true, customValidator: validatePassword, inputType: 'password' },
-    { value: '', label: 'Business', name: 'business', type: 'checkbox', required: true }
-  ];
-  const errors = {
-    short_pwd: 'Password too short'
-  };
-
-  const onSubmit = (form: any): any => console.log(form);
-
   return <div className="App">
       <HeaderComponent/>
-      <FormComponent fields={fields} onSubmit={onSubmit} errors={errors} />
+      <div className="container margin-top">
+        <h1 className="centered">React Forms Element</h1>
+        <p className="centered">Flexible and customizable npm component to easily create forms in React.</p>
+        { APP_CONSTANTS.EXAMPLES.map((props: ExampleComponentProps, index: number) => <ExampleComponent key={index} {...props}/>) }
+      </div>
   </div>;
 };
 

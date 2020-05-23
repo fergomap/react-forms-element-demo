@@ -1,3 +1,22 @@
 .App {
-  
+  .centered {
+    text-align: center;
+  }
+
+  .margin-top {
+    margin-top: 20px;
+  }
+
+  .form-component {
+      padding: 0;
+
+      textarea {
+        height: 95px;
+      }
+
+      .submit-container {
+          padding: 0 15px;
+          width: 100%;
+      }
+  }
 }

@@ -1,0 +1,26 @@
+.example-component {
+    h4 {
+        color: #0a84ff;
+    }
+
+    .sections {
+        margin-bottom: 10px;
+
+        button {
+            background-color: lightgray;
+            color: white;
+            font-weight: bold;
+            padding: 5px 20px;
+            border: none;
+            outline: none;
+
+            @media only screen and (max-width: 600px) {
+                width: 50%;
+              }
+        }
+
+        .selected {
+            background-color: #0a84ff;
+        }
+    }
+}
