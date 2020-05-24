@@ -13,7 +13,7 @@ export interface ExampleComponentProps {
 const ExampleComponent: FunctionComponent<ExampleComponentProps> = ({ code, component, subtitle, title }): ReactElement => {
     const [ showCode, setShowCode ] = useState(false);
 
-    return <div className="example-component">
+    return <div className="example-component container">
         <div className="row">
             <div className="col-sm-12">
                 <h4>{ title }</h4>

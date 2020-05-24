@@ -14,6 +14,10 @@
     background-color: #d5eaff;
   }
 
+  .no-margin {
+    margin: 0;
+  }
+
   .form-component {
       padding: 0;
 
@@ -33,6 +37,23 @@
       .submit-container {
           padding: 0 15px;
           width: 100%;
+      }
+
+      table {
+        padding: 0 15px;
+      }
+
+      .title {
+        padding: 0 15px;
+      }
+
+      .general-error-container {
+        width: 100%;
+        padding: 0 15px;
+      }
+
+      .list-component > .error {
+        padding: 0 15px;
       }
   }
 }

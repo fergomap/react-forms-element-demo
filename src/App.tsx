@@ -7,11 +7,12 @@ import { APP_CONSTANTS } from './config/app.config';
 const App: FunctionComponent = (): ReactElement => {
   return <div className="App">
       <HeaderComponent/>
-      <div className="title-container">
-          <h1 className="text-centered">React Forms Element</h1>
-          <p className="text-centered">Flexible and customizable npm component to easily create forms in React.</p>
+      <div className="title-container text-centered">
+          <img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo"/>
+          <h1>React Forms Element</h1>
+          <p>Flexible and customizable npm component to easily create forms in React.</p>
       </div>
-      <div className="container margin-top">
+      <div className="margin-top">
         { APP_CONSTANTS.EXAMPLES.map((props: ExampleComponentProps, index: number) => <ExampleComponent key={index} {...props}/>) }
       </div>
   </div>;

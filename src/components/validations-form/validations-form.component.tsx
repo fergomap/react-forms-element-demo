@@ -1,6 +1,5 @@
 import React, { FunctionComponent, ReactElement, useState } from 'react';
 import { FormComponent, Field } from 'react-forms-element';
-import './validations-form.component.scss';
 import { SpinnerComponent } from 'react-element-spinner';
 
 const nameValidation = (name: string): string => name.length > 3 ? '' : 'short_name';
