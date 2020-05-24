@@ -1,5 +1,7 @@
 .App {
-  .centered {
+  margin-bottom: 20px;
+
+  .text-centered {
     text-align: center;
   }
 
@@ -9,6 +11,15 @@
 
   .form-component {
       padding: 0;
+
+      span {
+        margin: 0;
+        color: black;
+      }
+
+      .error {
+        color: red;
+      }
 
       textarea {
         height: 95px;

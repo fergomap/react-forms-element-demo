@@ -3,7 +3,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-size: 30px;
     background-color: #0a84ff;
+
+    span {
+        color: white;
+    }
 }

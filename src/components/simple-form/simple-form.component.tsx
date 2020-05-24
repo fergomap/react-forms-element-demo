@@ -3,7 +3,7 @@ import { FormComponent, Field } from 'react-forms-element';
 
 const SimpleFormComponent: FunctionComponent = (): ReactElement => {
   const fields: Field[] = [
-    { value: '', className: 'col-sm-12 col-md-3', label: 'Name', name: 'name', type: 'string', required: true },
+    { value: '', className: 'col-sm-12 col-md-3', label: 'Name', name: 'name', type: 'string', required: true, onChange: (name: string) => console.log('Name changed: ' + name), onBlur: (name: string) => console.log('Name blur: ' + name) },
     { value: '', className: 'col-sm-12 col-md-3', label: 'Email', name: 'email', type: 'email', required: true },
     { value: '', className: 'col-sm-12 col-md-3', label: 'Age', name: 'age', required: true, inputType: 'number', type: 'number' },
     { value: '', className: 'col-sm-12 col-md-3', label: 'Password', name: 'pwd', required: true, inputType: 'password' },
@@ -17,7 +17,7 @@ const SimpleFormComponent: FunctionComponent = (): ReactElement => {
     { value: '', className: 'col-sm-12 col-md-6', label: 'What programming languages do you know?', name: 'languages', type: 'checkbox-list', options: [{label: 'JavaScript', value: 'js'}, {label: 'TypeScript', value: 'ts'}, {label: 'JAVA', value: 'java'}, {label: 'Python', value: 'py'}], multipleSelected: true },
   ];
 
-  const onSubmit = (form: any): any => console.log(form);
+  const onSubmit = (form: Record<string, any>): void => console.log(form);
 
   return <FormComponent className="row" fields={fields} onSubmit={onSubmit} />;
 };
