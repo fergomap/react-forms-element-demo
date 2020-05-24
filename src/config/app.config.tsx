@@ -10,6 +10,8 @@ import DateFormComponent from '../components/date-form/date-form.component';
 import { dateFormCode } from '../components/date-form/date-form-code';
 import SelectCheckboxFormComponent from '../components/select-checkbox-form/select-checkbox-form.component';
 import { selectCheckboxCode } from '../components/select-checkbox-form/select-checkbox-code';
+import ListFormComponent from '../components/list-form/list-form.component';
+import { listFormCode } from '../components/list-form/list-form-code';
 
 
 interface AppConfig {
@@ -43,6 +45,11 @@ export const APP_CONSTANTS: AppConfig = {
             subtitle: 'An example of a form with single and multiple selection checkbox, checkbox-list and select showing how to pass already selected values.',
             component: <SelectCheckboxFormComponent/>,
             code: selectCheckboxCode
+        }, {
+            title: 'LIST FORM EXAMPLE',
+            subtitle: 'An example of a form with a list field, it allows to add as many custom objects as you want. It is kind of a form inside a form. It is recursive, you can add a list field inside a list field.',
+            component: <ListFormComponent/>,
+            code: listFormCode
         }
     ]
 };
