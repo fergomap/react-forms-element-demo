@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-forms-element-demo/static/css/main.62335bd4.chunk.css",
+    "main.js": "/react-forms-element-demo/static/js/main.a8ffc4a5.chunk.js",
+    "main.js.map": "/react-forms-element-demo/static/js/main.a8ffc4a5.chunk.js.map",
+    "runtime-main.js": "/react-forms-element-demo/static/js/runtime-main.84093a1a.js",
+    "runtime-main.js.map": "/react-forms-element-demo/static/js/runtime-main.84093a1a.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/react-forms-element-demo/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.7ada97c5.chunk.js": "/react-forms-element-demo/static/js/2.7ada97c5.chunk.js",
+    "static/js/2.7ada97c5.chunk.js.map": "/react-forms-element-demo/static/js/2.7ada97c5.chunk.js.map",
+    "index.html": "/react-forms-element-demo/index.html",
+    "precache-manifest.586a3c43b43798148d5f685d4709056d.js": "/react-forms-element-demo/precache-manifest.586a3c43b43798148d5f685d4709056d.js",
+    "service-worker.js": "/react-forms-element-demo/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/react-forms-element-demo/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.62335bd4.chunk.css.map": "/react-forms-element-demo/static/css/main.62335bd4.chunk.css.map",
+    "static/js/2.7ada97c5.chunk.js.LICENSE.txt": "/react-forms-element-demo/static/js/2.7ada97c5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84093a1a.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.7ada97c5.chunk.js",
+    "static/css/main.62335bd4.chunk.css",
+    "static/js/main.a8ffc4a5.chunk.js"
+  ]
+}
