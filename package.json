@@ -1,6 +1,7 @@
 {
   "name": "react-forms-element-demo",
-  "version": "0.1.0",
+  "homepage": "https://fergomap.github.io/react-forms-element-demo",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,7 +17,7 @@
     "react": "^16.13.1",
     "react-code-snippet": "^0.6.13",
     "react-dom": "^16.13.1",
-    "react-forms-element": "1.0.0",
+    "react-forms-element": "^1.0.1",
     "react-scripts": "3.4.1",
     "react-syntax-highlighter": "^12.2.1",
     "typescript": "^3.7.5"
